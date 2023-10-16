@@ -13,7 +13,6 @@ export class AccountComponent {
 
 onSetTo(status: string){
   this.statusChanges.emit({id: this.id, status});
-  console.log('A server status changed, new status: ' + status);
 
 }
 }
