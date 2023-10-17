@@ -18,5 +18,6 @@ constructor(private loggingService:LoggingService,private accounService:AccountS
 
 onSetTo(status: string){
   this.accounService.updateStatus(this.id,status);
+  this.accounService.statusUpdated.emit(status);
 }
 }
